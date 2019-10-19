@@ -45,6 +45,8 @@ section.game div.row {
 /* ------------------Game---------------- */
 
 .GameBtn {
+    background-color: rgb(0, 17, 255);
+    border-color: rgb(0, 17, 255);
     width: 12vw;
     height: 12vw;
     margin-left: 0.5vw;
@@ -68,3 +70,9 @@ section.game{
     top: 5vh;
 }
 
+
+/* ------------------Annimation---------------- */
+@keyframes ColorChange {
+    from  {background-color: rgb(0, 17, 255); border-color: rgb(0, 17, 255)}
+    to {background-color: rgb(255, 0, 0); border-color: rgb(255, 0, 0)}
+  }
