@@ -1,0 +1,70 @@
+/* ------------------Text---------------- */
+
+h1 {
+    font-size: 2em;
+    font-weight: 800;
+    margin:0;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.25em;
+    font-weight: 600;
+    margin: 0;
+}
+
+h4 {
+    font-size: 1.25em;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* ------------------General---------------- */
+
+.title {
+    height: 20vh;
+    text-align: center;
+}
+
+section.game div.row {
+    height: 14vw;
+}
+
+.centered {
+    width: 100vw;
+    text-align: center;
+}
+
+
+/* ------------------Game---------------- */
+
+.GameBtn {
+    width: 12vw;
+    height: 12vw;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    padding: 0;
+}
+
+.play {
+    height: 20vh;
+}
+
+.PlayBtn {
+    position: relative;
+    top: 10vh;
+    height: 10vw;
+    width: 20vw;
+}
+
+section.game{
+    position: relative;
+    top: 5vh;
+}
+
