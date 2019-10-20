@@ -7,16 +7,11 @@ function shuffle(a) {
 }
 
 function play() {
-    var amount;
-    var BtnAmount = 3;
-    var i;
-    var index;
-    var btn;
-    var delay;
-    var BtnsControl = [];
-    var BtnPlayed
-    var BtnsPlayed = [];
-    var numbers = [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    BtnAmount = 3;
+    BtnsControl = [];
+    BtnsPlayed = [];
+    numbers = [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    i = 0;
     for (amount = 0; amount < BtnAmount; amount++) {
         numbers = shuffle(numbers);
         ind = numbers.indexOf(1);
@@ -27,16 +22,26 @@ function play() {
         $(btn).css({'animation-name': 'ColorChange', 'animation-duration': '0.5s', 'animation-delay': delay});
     }
     console.log(BtnsControl);
-    amount = 0
-  
-    /* if */
-    
+
+    i = 0;
     $('.GameBtn').on('click', function(event) {
-        BtnPlayed = event.currentTarget.id;
-        BtnsPlayed[amount] = BtnPlayed;
-        amount++
-    })
-       
+        BtnsPlayed[i] = "#" + event.currentTarget.id;
+        console.log(BtnsPlayed);
+        if (BtnsPlayed[i] != BtnsControl[i]) {
+            alert("Sorry You missed.Your score is...");
+            i = 0;
+            return;
+        } else if (i === BtnAmount-1) {
+            alert("Congratulations! You Won!! Your score is...");
+            i = 0;
+            return;
+        } else {
+            i++;
+            return;
+        };
+    });
+
+  
 
     console.log(BtnsPlayed);
 }  
