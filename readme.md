@@ -39,9 +39,9 @@ CSS was tested several times on "different devices" using developer tools in dif
 
 ## Deployment
 
-The website is hosted on GitHub pages, directly from the master branch. The deployed site will update automatically upon new commits to the master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named index.html.
+The website is hosted on GitHub pages, directly from the master branch.
 
-To run locally, you can clone this repository directly into the editor of your choice by pasting git clone [https://github.com/AllardL/The-Memory-Game.git](https://github.com/AllardL/The-Memory-Game.git) into your terminal. To cut ties with this GitHub repository, type git remote rm origin into the terminal.
+If you want to run the code locally, you can clone this repository into the editor of your choice by pasting: "git clone https://github.com/AllardL/The-Memory-Game.git" into your terminal. To cut ties with this GitHub repository, type git remote rm origin into the terminal.
 
 ## Media
 
