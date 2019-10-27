@@ -38,6 +38,15 @@ $(document).ready(function() {
     $(".PlayBtn").click(function() {
         play();
     });
+
+    $(".HelpBtn").click(function() {
+        swal({
+            title: "Help menu",
+            text: "Click the buttons in the correct order after they lit up",
+            icon: "info" ,
+            button: false,
+        });
+    });
     
     $('.GameBtn').on('click', function(event) {
         btnsPlayed[i] = "#" + event.currentTarget.id;

@@ -54,14 +54,15 @@ section.game div.row {
     padding: 0;
 }
 
-.play {
-    top: 2px;
-    height: 20vh;
-}
-
 .PlayBtn {
     position: relative;
-    top: 5vh;
+    top: 4vh;
+    height: 10vw;
+    width: 20vw;
+}
+.HelpBtn {
+    position: relative;
+    top: 4vh;
     height: 10vw;
     width: 20vw;
 }
