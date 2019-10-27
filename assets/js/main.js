@@ -45,6 +45,7 @@ $(document).ready(function() {
         if (btnsPlayed[i] != btnsControl[i]) {
             if (score > highscore) {
                 higscore = score;
+                document.getElementById("score").innerHTML = "Your score = " + score;
                 document.getElementById("highscore").innerHTML = "Highest score:" + highscore;
                 swal({
                     title: "Congratulations!!",
@@ -53,6 +54,7 @@ $(document).ready(function() {
                     button: false,
                 });
             } else {
+                document.getElementById("score").innerHTML = "Your score = " + score;
                 swal({
                     title: "Game over!",
                     text: "Your score is " + score,
@@ -60,26 +62,45 @@ $(document).ready(function() {
                     button: false,
                 });
             }
-            score = 0
+            score = 0;
+            document.getElementById("score").innerHTML = "Your score = " + score;
             i = 0;
             return;
         } else if (i === btnAmount-1) {
             score = score + btnAmount
             if (score > highscore) {
                 highscore = score;
+                document.getElementById("score").innerHTML = "Your score = " + score;
                 document.getElementById("highscore").innerHTML = "Highest score = " + highscore;
                 swal({
                     title: "Congratulations!! You Won!",
                     text: "Your score is " + score +" (New highest score!)",
                     icon: "success" ,
-                    button: false,
+                    buttons: ["Stop playing", "Continue"],
+                }).then((Continue) => {
+                    if (Continue) {
+                        play();
+                    } else {
+                        score = 0;
+                        document.getElementById("score").innerHTML = "Your score = " + score;
+                        i = 0;
+                    }
                 });
             } else {
+                document.getElementById("score").innerHTML = "Your score = " + score;                
                 swal({
                     title: "Congratulations!! You Won!",
                     text: "Your score is " + score,
                     icon: "success" ,
-                    button: false,
+                    buttons: ["Stop playing", "Continue"],
+                }).then((Continue) => {
+                    if (Continue) {
+                        play();
+                    } else {
+                        score = 0;
+                        document.getElementById("score").innerHTML = "Your score = " + score;
+                        i = 0;
+                    }                   
                 });
             }
             i = 0;
