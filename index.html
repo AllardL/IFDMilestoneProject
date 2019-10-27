@@ -19,14 +19,21 @@
 
     <header>
         <div class="jumbotron title">
-            <h1>The Memory Game</h1>
-            <p class="lead">I hope you will like this game :) Be carefull! High addiction level!</p>
-            <hr class="my-4">
+            <div class="row centered">      
+                <div class="col-12">
+                    <h1>The Memory Game</h1>
+                    <p class="lead">I hope you will like this game :) Be carefull! High addiction level!</p>
+                </div>
+            </div>       
         </div>
     </header>
-    <section>
-        <h3 id="highscore" class="centered">Highest score = 0</h3>
-        <h4 id="score" class="centered">Your score = 0</h4>
+    <section class="container-fluid">
+        <div class="row centered">      
+            <div class="col-12">
+                <h3 id="highscore" class="centered">Highest score = 0</h3>
+                <h4 id="score" class="centered">Your score = 0</h4>
+            </div>
+        </div>                
     </section>
 
     <section class="container-fluid block game">
@@ -91,11 +98,9 @@
             </div>
         </div>
 
-        <div class="row centered play">      
-            <div class="col-6">
+        <div class="row centered"> 
+            <div class="col-12">     
                 <button type="button" class="PlayBtn btn btn-primary" id="play">Play!</button>
-            </div>     
-            <div class="col-6">
                 <button type="button" class="HelpBtn btn btn-primary" id="help">Help</button>
             </div>
         </div>

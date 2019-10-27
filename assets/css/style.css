@@ -15,12 +15,12 @@ h2 {
 
 h3 {
     font-size: 1.25em;
-    font-weight: 600;
+    font-weight: 700;
     margin: 0;
 }
 
 h4 {
-    font-size: 1.25em;
+    font-size: 1.20em;
     font-weight: 500;
     margin: 0;
 }
@@ -28,7 +28,7 @@ h4 {
 /* ------------------General---------------- */
 
 .title {
-    height: 20vh;
+    height: 15vh;
     text-align: center;
 }
 
@@ -38,8 +38,17 @@ section.game div.row {
 
 .centered {
     width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
 }
+
+.justify-content-center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 
 
 /* ------------------Game---------------- */
@@ -59,12 +68,15 @@ section.game div.row {
     top: 4vh;
     height: 10vw;
     width: 20vw;
+    margin-right: 3vw;
 }
+
 .HelpBtn {
     position: relative;
     top: 4vh;
     height: 10vw;
     width: 20vw;
+    margin-left: 3vw;
 }
 
 section.game{
@@ -79,3 +91,62 @@ section.game{
     to {background-color: rgb(255, 0, 0); border-color: rgb(255, 0, 0)}
   }
 
+/* ------------------Media Queries---------------- */
+
+@media (min-width: 768px) {
+
+    /* ------------------General---------------- */
+
+    .title {
+        height: 200px;
+        text-align: center;
+    }
+
+    section.game div.row {
+        height: 90px;
+    }
+
+    .centered {
+        width: 900px;
+        text-align: center;
+    }
+
+    .justify-content-center {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    /* ------------------Game---------------- */
+
+    .GameBtn {
+        background-color: rgb(0, 17, 255);
+        border-color: rgb(0, 17, 255);
+        width: 80px;
+        height: 80px;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 0;
+    }
+
+    .PlayBtn {
+        position: relative;
+        top: 4vh;
+        height: 70px;
+        width: 140px;
+        margin-right:50px; 
+    }
+
+    .HelpBtn {
+        position: relative;
+        top: 4vh;
+        height: 70px;
+        width: 140px;
+        margin-left:50px; 
+    }
+
+    section.game{
+        position: relative;
+        top: 5vh;
+    }
+}
