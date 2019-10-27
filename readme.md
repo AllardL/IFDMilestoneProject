@@ -36,6 +36,7 @@ The website is tested on different devices from smartphone to workstation with a
 CSS was tested several times on "different devices" using developer tools in different webbrowsers. Using life editing in the webbrowser different settings were tested and improved.
 
 [Freeformatter.com](https://www.freeformatter.com/html-validator.html) was used for code validation. ISO-8859-9 setting was used.
+[JsHint](https://jshint.com/) was used for JavaScript validation. No mayor issues were found
 
 ## Deployment
 
