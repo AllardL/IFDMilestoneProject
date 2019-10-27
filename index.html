@@ -11,6 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <title>The Memory Game</title>
 </head>
@@ -23,6 +24,9 @@
             <hr class="my-4">
         </div>
     </header>
+    <section>
+        <h3 id="highscore" class="centered">Highest score = 0</h3>
+    </section>
 
     <section class="container-fluid block game">
         <div class="row centered">      
@@ -85,16 +89,14 @@
                 <button type="button" class="GameBtn btn btn-primary" id="btn36"></button>
             </div>
         </div>
-    </section>
 
-    <section class="container-fluid block"> 
         <div class="row centered play">      
             <div class="col-12">
                 <button type="button" class="PlayBtn btn btn-primary" id="play">Play!</button>
             </div>
         </div>
     </section>
-    <script src="assets/java/main.js"></script>
+    <script src="assets/js/main.js"></script>
 
 </body>
 </html>

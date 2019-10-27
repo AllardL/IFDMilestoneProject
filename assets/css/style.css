@@ -55,12 +55,13 @@ section.game div.row {
 }
 
 .play {
+    top: 2px;
     height: 20vh;
 }
 
 .PlayBtn {
     position: relative;
-    top: 10vh;
+    top: 5vh;
     height: 10vw;
     width: 20vw;
 }
@@ -71,8 +72,9 @@ section.game{
 }
 
 
-/* ------------------Annimation---------------- */
+/* ------------------Animation---------------- */
 @keyframes ColorChange {
     from  {background-color: rgb(0, 17, 255); border-color: rgb(0, 17, 255)}
     to {background-color: rgb(255, 0, 0); border-color: rgb(255, 0, 0)}
   }
+
